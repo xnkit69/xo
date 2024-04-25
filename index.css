@@ -1,0 +1,80 @@
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk';
+    
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,main{
+    min-height: 356px;
+}
+
+.item-left{
+    background-color:#222222; 
+    flex-basis: 356px; 
+}
+
+.my-face-picture{
+
+    height: 356px;
+    width: 356px;
+}
+
+.item-right{
+
+    background-color: #F5F5F5;
+    flex: 1;
+    
+}
+
+.purple-color{
+    color: #626CC3;
+}
+.purple-background{
+    background: #626CC3;
+}
+
+
+.section-name >p{
+  padding: 0;
+  margin: 0;
+  font-size: 56px;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1100px){ 
+
+    .section-name >p{
+        font-size: 30px;
+      }
+
+}
+
+@media(max-width:650px){ 
+
+    .item-right, .item-left{
+
+        flex-basis: 100%;
+        
+    }
+    .item-left{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.name{
+    animation-delay: 0.25s;
+}
